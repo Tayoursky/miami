@@ -1,0 +1,136 @@
+@import '_common'
+@import '_sprite-svg'
+
+
+.container
+    margin: 0 auto
+    max-width: 940px
+    &:before,
+    &:after 
+        content: "";
+        display: table;
+    
+    &:after 
+        clear: both;
+    
+    
+.hero    
+    background-size: cover
+    background-position: 50% 100%
+    background-repeat: no-repeat
+    .container
+        height: 100vh
+        min-height: 600px
+        position: relative
+.header
+    position: absolute
+    top: 100px
+    left: 0
+    right: 0
+    &__logo
+        position: absolute
+        top: -46px
+        left: 50%
+        transform: translate(-50%,0)
+
+    &__phone
+        float: left
+        text-decoration: none
+        color: #fff
+        opacity: 0.6
+    &__call
+        float: right
+        text-decoration: none
+        color: #fff
+        border-bottom: 1px dashed #fff
+        opacity: 0.6
+        text-transform: uppercase
+.nav
+    position: absolute
+    bottom: 60px
+    left: 0
+    right: 0
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    a 
+        text-transform: uppercase
+        color: #fff
+        text-decoration: none
+        font-weight: 600
+.section
+    padding: 130px 0
+    position: relative
+    &:nth-child(odd)
+        background: #eeeeee
+    &__left
+        float: left
+        width: 50%
+    &__right
+        float: right
+        width: 33%
+    &__title
+        position: absolute
+        padding-bottom: 20px
+        left: 50%
+        top: -1.4em
+        transform: translate(-50%,0)
+        font-size: 48px
+        font-weight: 100
+        color:#000        
+        text-transform: uppercase
+        &:after,&:before
+            content: ""
+            width: calc(50% - 20px)
+            position: absolute
+            height: 4px
+            background: #1cabec
+        &:before
+            left: 0
+            bottom: 0
+        &:after
+            right: 0
+
+.best
+    &__motto
+        float: left
+        width: 33%
+    &__text
+        float: right
+        width: 66%
+.wrapper
+    position: relative
+    background: #fff
+    z-index: 20
+    box-shadow: 0 0 10px rgba(#000,.5)
+
+.footer
+    height: 540px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    position: fixed
+    bottom: 0
+    z-index: 1
+    left: 0
+    right: 0
+    &__logo
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
+
+    &__copy
+        position: absolute
+        text-transform: uppercase
+        color: #fff
+        text-align: center
+        font-size: 16px
+        bottom: 66px
+        right: 0
+        left: 0
